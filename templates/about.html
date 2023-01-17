@@ -23,7 +23,7 @@
             {% if loop.index % 2 != 0 %}
 
                 <div class="col-md-7">
-                    <h3>{{ loop.index }}. {{ member.name }}</h3>
+                    <h3><a href="/about/{{ memeber.url }}">{{ loop.index }}. {{ member.name }}</a></h3>
                     <p>
                         {{ member.description }}
                     </p>
@@ -35,7 +35,7 @@
             {% else %}
 
                 <div class="col-md-7">
-                    <h3>{{ loop.index }}. {{ member.name }}</h3>
+                    <h3><a href="/about/{{ memeber.url }}">{{ loop.index }}. {{ member.name }}</a></h3>
                     <p>
                         {{ member.description }}
                     </p>
